@@ -1,7 +1,14 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
+const repoName = 'E-portfolio'
+const githubPagesBase =
+  process.env.GITHUB_ACTIONS === 'true'
+    ? `/${process.env.GITHUB_REPOSITORY?.split('/')[1] ?? repoName}/`
+    : '/'
+
 // https://vite.dev/config/
 export default defineConfig({
+  base: githubPagesBase,
   plugins: [react()],
 })

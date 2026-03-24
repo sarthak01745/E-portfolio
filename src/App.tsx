@@ -10,6 +10,7 @@ const reveal = {
 
 function App() {
   const content = portfolioData as PortfolioData
+  const resumeUrl = `${import.meta.env.BASE_URL}resume.pdf`
 
   return (
     <div className="app-shell">
@@ -233,7 +234,7 @@ function App() {
               Keep your latest resume in <strong>public/resume.pdf</strong> and this
               button will open it instantly.
             </p>
-            <a className="btn solid" href="/resume.pdf" target="_blank" rel="noreferrer">
+            <a className="btn solid" href={resumeUrl} target="_blank" rel="noreferrer">
               Download Resume
             </a>
           </motion.section>
