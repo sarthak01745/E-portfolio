@@ -1,0 +1,80 @@
+{
+  "name": "Sarthak Jain",
+  "role": "B.Tech Computer Science Student",
+  "email": "sarthak01745@gmail.com",
+  "phone": "+91 87619 23830",
+  "location": "N.T Road, Nalbari, Assam 783235",
+  "graduationYear": "2027",
+  "summary": "Highly motivated B.Tech Computer Science student (CGPA 9.47) with strong programming and web development foundations. Enthusiastic about applying practical technical skills to real-world problems through internships and collaborative projects.",
+  "objective": "Actively looking for internship and placement opportunities in software engineering and web development where I can contribute, learn fast, and grow with a high-impact team.",
+  "skills": {
+    "programming": ["Java"],
+    "frameworks": ["HTML", "CSS"]
+  },
+  "education": [
+    {
+      "institute": "SRM IST - Trichy",
+      "detail": "B.Tech, Computer Science and Engineering",
+      "score": "CGPA: 9.47/10",
+      "year": "2027"
+    },
+    {
+      "institute": "Modern Public Academy",
+      "detail": "Class XII - CBSE, MPC, Rampur, Kamrup, Assam",
+      "score": "Percentage: 67.8%",
+      "year": "2023"
+    },
+    {
+      "institute": "Nalanda Public School",
+      "detail": "Class X - CBSE, Nalbari, Assam",
+      "score": "Percentage: 91.2%",
+      "year": "2021"
+    }
+  ],
+  "experience": [
+    {
+      "role": "Web Developer Intern",
+      "organization": "Prodigy",
+      "meta": "Internship"
+    },
+    {
+      "role": "Treasurer",
+      "organization": "Entrepreneurship Development Cell, SRM Trichy",
+      "meta": "Student Leadership"
+    }
+  ],
+  "projects": [
+    {
+      "title": "MOOC Collaboration System",
+      "description": "Spring Boot based distributed educational infrastructure that enables inter-university collaboration on MOOCs with routing and credit-transfer features.",
+      "status": "live",
+      "link": "https://github.com/sarthak01745/mooc-collaboration-system"
+    }
+  ],
+  "certifications": ["The Joy of Computing Using Python (NPTEL)"],
+  "volunteering": [
+    {
+      "organization": "The Green Globe",
+      "role": "Volunteer"
+    }
+  ],
+  "languages": [
+    "English (Professional Working Proficiency)",
+    "Hindi (Native Proficiency)",
+    "Assamese (Limited Working Proficiency)"
+  ],
+  "links": [
+    {
+      "label": "LinkedIn",
+      "href": "https://www.linkedin.com/"
+    },
+    {
+      "label": "GitHub",
+      "href": "https://github.com/sarthak01745"
+    },
+    {
+      "label": "Email",
+      "href": "mailto:sarthak01745@gmail.com"
+    }
+  ]
+}

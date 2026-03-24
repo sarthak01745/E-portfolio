@@ -1,0 +1,272 @@
+.app-shell {
+  width: min(1180px, 92vw);
+  margin: 2rem auto;
+  background: rgba(248, 245, 239, 0.86);
+  border: 1px solid rgba(19, 30, 43, 0.16);
+  border-radius: 24px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.14);
+  overflow: hidden;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 2rem;
+  border-bottom: 1px solid rgba(20, 33, 49, 0.12);
+  position: sticky;
+  top: 0;
+  background: rgba(248, 245, 239, 0.85);
+  z-index: 20;
+}
+
+.brand {
+  color: var(--ink-strong);
+  text-decoration: none;
+  font-family: var(--font-display);
+  font-size: clamp(1.35rem, 3.5vw, 2rem);
+  letter-spacing: 0.04em;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: var(--ink-soft);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+nav a:hover,
+nav a:focus-visible {
+  color: var(--ink-strong);
+}
+
+main {
+  padding: 1.3rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 1rem;
+}
+
+.hero.plain-hero {
+  grid-template-columns: 1fr;
+}
+
+.hero-copy,
+.panel {
+  border-radius: 20px;
+  border: 1px solid rgba(20, 33, 49, 0.14);
+  background: linear-gradient(160deg, rgba(255, 251, 245, 0.95), rgba(240, 235, 226, 0.92));
+  padding: 1.4rem;
+}
+
+.hero-copy {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.eyebrow {
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.74rem;
+  font-weight: 700;
+}
+
+h1 {
+  margin: 0;
+  font-family: var(--font-display);
+  color: var(--ink-strong);
+  line-height: 1;
+  font-size: clamp(2rem, 6vw, 4rem);
+}
+
+h2 {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: clamp(1rem, 2.8vw, 1.5rem);
+}
+
+.lead,
+.objective {
+  margin: 0;
+  color: var(--ink-soft);
+}
+
+.hero-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  padding: 0.64rem 1rem;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.9rem;
+  border: 1px solid transparent;
+}
+
+.btn.solid {
+  background: var(--ink-strong);
+  color: var(--canvas);
+}
+
+.btn.ghost {
+  border-color: rgba(20, 33, 49, 0.22);
+  color: var(--ink-strong);
+}
+
+.meta {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+}
+
+h3 {
+  margin: 0 0 0.8rem;
+  color: var(--ink-strong);
+  font-family: var(--font-display);
+  font-size: clamp(1.3rem, 3vw, 2.1rem);
+  letter-spacing: 0.02em;
+}
+
+.grid.two {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
+.card {
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(20, 33, 49, 0.14);
+  padding: 0.9rem;
+}
+
+.card h4 {
+  margin: 0.25rem 0;
+  color: var(--ink-strong);
+  font-size: 1.05rem;
+}
+
+.card p {
+  margin: 0;
+  color: var(--ink-soft);
+}
+
+.year,
+.score {
+  font-size: 0.84rem;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  font-weight: 700;
+}
+
+.chips-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.chip {
+  border-radius: 999px;
+  padding: 0.42rem 0.72rem;
+  background: #1c2c3f;
+  color: #f6f7fb;
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+
+.chip.muted {
+  background: #42566f;
+}
+
+.link-chip:hover,
+.link-chip:focus-visible {
+  background: #0f6c7d;
+}
+
+.compact-panels .panel {
+  height: 100%;
+}
+
+ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: var(--ink-soft);
+  display: grid;
+  gap: 0.36rem;
+}
+
+.contact {
+  text-align: center;
+}
+
+footer {
+  padding: 1.1rem 1.6rem 1.5rem;
+  border-top: 1px solid rgba(20, 33, 49, 0.12);
+}
+
+footer p {
+  margin: 0;
+  color: var(--ink-soft);
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .grid.two {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .app-shell {
+    width: min(96vw, 1180px);
+    margin: 0.6rem auto;
+    border-radius: 20px;
+  }
+
+  .topbar {
+    padding: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+
+  nav {
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 0.2rem;
+  }
+
+  nav a {
+    white-space: nowrap;
+  }
+
+  main {
+    padding: 0.8rem;
+  }
+}
